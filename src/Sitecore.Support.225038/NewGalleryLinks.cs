@@ -123,34 +123,6 @@ namespace Sitecore.Support.Shell.Applications.ContentManager.Galleries.Links
             }
             }
         }
-
-       /* result.Append("<a href=\"#\" class=\"scLink\" onclick='javascript:return scForm.invoke(\"item:load(id=" + referrer.ID + ",language=" + sourceLanguage + ",version=" + sourceVersion + ")\")'>" + Images.GetImage(referrer.Appearance.Icon, 16, 16, "absmiddle", "0px 4px 0px 0px") + referrer.GetUIDisplayName());
-
-        if (link != null && !link.SourceFieldID.IsNull)
-        {
-          Field field = referrer.Fields[link.SourceFieldID];
-          if (!string.IsNullOrEmpty(field.DisplayName))
-          {
-            result.Append(" - ");
-            result.Append(field.DisplayName);
-
-            if (sourceItem != null)
-            {
-              var sourceField = sourceItem.Fields[link.SourceFieldID];
-              if (sourceField != null)
-              {
-                if (!sourceField.HasValue)
-                {
-                  result.Append(" <span style=\"color:#999999\">");
-                  result.Append(Translate.Text(Sitecore.Texts.Inherited));
-                  result.Append("</span>");
-                }
-              }
-            }
-          }
-        }*/
-
-      // result.Append(" - [" + referrer.Paths.Path + "]</a>");
       }
 
       result.Append("</div>");
