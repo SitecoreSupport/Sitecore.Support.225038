@@ -109,7 +109,7 @@ namespace Sitecore.Support.Shell.Applications.ContentManager.Galleries.Links
           {
             if (sourceField.HasValue)
             {
-              result.Append("<a href=\"#\" class=\"scLink\" onclick='javascript:return scForm.invoke(\"item:load(id=" + referrer.ID + ",language=" + sourceLanguage + ",version=" + sourceVersion + ")\")'>" + Images.GetImage(referrer.Appearance.Icon, 16, 16, "absmiddle", "0px 4px 0px 0px") + referrer.GetUIDisplayName());
+              result.Append("<a href=\"#\" class=\"scLink\" onclick='javascript:return scForm.invoke(\"item:load(id=" + referrer.ID + ",language=" + sourceLanguage + ",version=" + sourceVersion + ")\")'>" + Images.GetImage(referrer.Appearance.Icon, 16, 16, "absmiddle", "0px 4px 0px 0px") + referrer.DisplayName);
               if (link != null && !link.SourceFieldID.IsNull)
               {
                 Field field = referrer.Fields[link.SourceFieldID];
